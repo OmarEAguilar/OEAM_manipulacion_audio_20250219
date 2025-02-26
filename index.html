@@ -121,7 +121,7 @@
 			</div>
 			<div>
 				<h1>Reproductor improvisado</h1>
-				<audio id="Reproductor">
+				<audio id="reproductor">
 					<source src="media/sounds/788470__newlocknew__scne_a-creepy-red-corridor-and-a-scary-room.mp3" type="audio/mp3"/>
 				</audio>
 			<button type="button" id="play" class="btn btn-primary">Reproducir</button>
@@ -136,8 +136,8 @@
 				const play = document.getElementById("play");
 				const pause = document.getElementById("pause");
 				
-				play.Onclick =playAudio;
-				pause.Onclick =pauseAudio;
+				play.onclick =playAudio;
+				pause.onclick =pauseAudio;
 
 				function playAudio(){
 					audio.play();
